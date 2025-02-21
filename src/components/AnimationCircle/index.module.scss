@@ -1,0 +1,78 @@
+.circle{
+  width: 530px;
+  height: 530px;
+  border: 1px solid rgba(66, 86, 122, 0.2);
+  border-radius: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 9999;
+  div{
+    position: absolute;
+    border-radius: 100%;
+    background: transparent;
+  }
+}
+.circle>div:nth-child(4){
+  top: 45%;
+  right: -28px;
+  transition: all 0.1s ease;
+}
+.circle>div:nth-child(1){
+  top: 45%;
+  left: -28px;
+}
+.circle>div:nth-child(2){
+  top: 1%;
+  left:20%;
+}
+.circle>div:nth-child(3){
+  top: 1%;
+  right:20%;
+}
+.circle>div:nth-child(6){
+  bottom: 1%;
+  left:20%;
+}
+.circle>div:nth-child(5){
+  bottom: 1%;
+  right:20%;
+}
+
+.circleItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px!important;
+  height: 56px!important;
+  color: #42567A!important;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.circleButton {
+  width: 6px;
+  height: 6px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 100%;
+  color: transparent;
+}
+
+.circleButton2 {
+  width: 56px!important;
+  height: 56px!important;
+  border: 1px solid #42567A;
+  background: white!important;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 100%;
+  color: #42567A!important;
+}
+
+@media screen and (max-width: 780px){
+  .circle{
+    display: none;
+  }
+
+}

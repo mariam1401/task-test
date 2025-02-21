@@ -1,0 +1,75 @@
+.title{
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: rgba(56, 119, 238, 1);
+  font-family: Bebas Neue, serif;
+}
+.text{
+  color: rgba(66, 86, 122, 1);
+  font-size: 20px;
+  line-height: 30px;
+}
+.sliderContainer{
+  position: relative;
+  button{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    box-shadow: 0 0 15px 0 #3877EE1A;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 18px;
+    color: #3877EE;
+    cursor: pointer;
+  }
+  button:first-child{
+    position: absolute;
+    top: 50%;
+    left: -50px;
+  }
+  button:last-child{
+    position: absolute;
+    top: 50%;
+    right: -50px;
+  }
+}
+.pagination_ctn{
+  margin-top: 50px;
+}
+.customPagination {
+  display: flex;
+  justify-content: center;
+  margin-top: -23px;
+  .paginationDot {
+    width: 6px;
+    height: 6px;
+    background: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &.activeDot {
+      background: #42567A;
+    }
+  }
+}
+
+@media screen and (max-width: 780px){
+  .title{
+    font-size: 16px;
+  }
+  .text{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .sliderContainer{
+    button{
+      display: none;
+    }
+  }
+
+}
